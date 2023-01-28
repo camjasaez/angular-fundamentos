@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-market';
+
+  btnDisable = true;
+
+  person = {
+    name: 'Camilo',
+    age: 18,
+    avatar: 'https://www.w3schools.com/howto/img_avatar.png'
+  }
 }
