@@ -1,22 +1,31 @@
 <h1>Hola mundo desde angular!</h1>
 
-
 <div>
-  <h2>*NgFor</h2>
-
-  <div>
-    <input type="text" required [(ngModel)]="name">
-    <button (click)="addName()"> Add Name</button>
-  </div>
-  <hr>
-  <ul>
-    <li *ngIf="names.length === 0"> La lista está vacia! </li>
-    <li *ngFor="let name of names; index as i">
-      {{i}}{{ name }}
-    <button (click)="eliminateName(i)">Eliminar {{i}}</button>
-    </li>
-  </ul>
+  <h2>*ngFor para arrays de objetos</h2>
+    <div *ngFor="let product of products">
+      <h3>{{product.name}}</h3>
+      <img [src]="product.image" [alt]="product.name" width="200" >
+      <p>${{product.price}}</p>
+      <hr>
+    </div>
 </div>
+
+<!--<div>-->
+<!--  <h2>*NgFor</h2>-->
+
+<!--  <div>-->
+<!--    <input type="text" required [(ngModel)]="name">-->
+<!--    <button (click)="addName()"> Add Name</button>-->
+<!--  </div>-->
+<!--  <hr>-->
+<!--  <ul>-->
+<!--    <li *ngIf="names.length === 0"> La lista está vacia! </li>-->
+<!--    <li *ngFor="let name of names; index as i">-->
+<!--      {{i}}{{ name }}-->
+<!--    <button (click)="eliminateName(i)">Eliminar {{i}}</button>-->
+<!--    </li>-->
+<!--  </ul>-->
+<!--</div>-->
 
 <!--<div>-->
 <!--  <h2>ngIf!</h2>-->
