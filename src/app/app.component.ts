@@ -27,6 +27,10 @@ export class AppComponent {
     this.name = ''
   }
 
+  eliminateName(index:number){
+    this.names.splice(index,1)
+  }
+
   addAge(){
     this.person.age++;
   }
