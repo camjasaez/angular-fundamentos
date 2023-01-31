@@ -1,18 +1,16 @@
 <h1>Hola mundo desde angular!</h1>
 
-<div>
   <h2>*ngFor para arrays de objetos</h2>
-    <div *ngFor="let product of products">
+<div class="products--grid">
+    <div *ngFor="let product of products" >
       <h3>{{product.name}}</h3>
       <img [src]="product.image" [alt]="product.name" width="200" >
       <p>${{product.price}}</p>
-      <hr>
     </div>
 </div>
 
 <!--<div>-->
 <!--  <h2>*NgFor</h2>-->
-
 <!--  <div>-->
 <!--    <input type="text" required [(ngModel)]="name">-->
 <!--    <button (click)="addName()"> Add Name</button>-->
